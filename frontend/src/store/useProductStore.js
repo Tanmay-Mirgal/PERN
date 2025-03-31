@@ -28,7 +28,7 @@ export const useProductStore = create((set, get) => ({
 
     try {
       const { formData } = get();
-      await axios.post(`${BASE_URL}/api/products`, formData);
+      await axios.post(`${BASE_URL}/api/products/create`, formData);
       await get().fetchProducts();
       get().resetForm();
       toast.success("Product added successfully");
