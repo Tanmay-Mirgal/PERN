@@ -3,7 +3,7 @@ import axios from "axios";
 import toast from "react-hot-toast";
 
 // base url will be dynamic depending on the environment
-const BASE_URL = import.meta.env.MODE === "development" ? "https://pern-pmi5.onrender.com" : "https://pern-pmi5.onrender.com";
+const BASE_URL =  "https://pern-pmi5.onrender.com" ;
 
 export const useProductStore = create((set, get) => ({
   // products state
